@@ -19,6 +19,8 @@ String subject;
 String currentAddress;
 String state;
 String city;
+String hobbies;
+String gender;
 
     }
 

@@ -14,8 +14,8 @@ public class AppManager {
         WebDriverManager.chromedriver().setup();
         wd =  new ChromeDriver();
         wd.manage().window().maximize();
-        wd.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        wd.navigate().to("https://demoqa.com/forms");
+        wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        wd.navigate().to("https://demoqa.com/");
         student =new HelperStudent(wd);
 
 

@@ -1,6 +1,7 @@
 package Manager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -34,4 +35,21 @@ public class HelperBase {
             e.printStackTrace();
         }
     }
+
+    public void hideFooter(){
+        JavascriptExecutor js=(JavascriptExecutor) wd;
+        js.executeScript("document.querySelector('footer').style.display='none'");
+
+    }
+    public void hideAds(){
+        JavascriptExecutor js=(JavascriptExecutor) wd;
+        js.executeScript("document.querySelector('#adplus-anchor').style.display='none'");
+    }
+
+    public void hideSomething(){
+        JavascriptExecutor js=(JavascriptExecutor) wd;
+        js.executeScript("document.querySelector('#close-fixedban').style.display='none'");
+    }
 }
+
+
